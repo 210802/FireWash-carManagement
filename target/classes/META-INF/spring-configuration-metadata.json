@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "jwt",
+      "type": "carmanagementservice.config.JwtProperties",
+      "sourceType": "carmanagementservice.config.JwtProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "jwt.secret",
+      "type": "java.lang.String",
+      "sourceType": "carmanagementservice.config.JwtProperties"
+    }
+  ],
+  "hints": []
+}

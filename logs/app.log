@@ -1,0 +1,128 @@
+2025-04-12T07:25:10.598+05:30  INFO 19676 --- [car-management-service] [main] c.CarManagementServiceApplication        : Starting CarManagementServiceApplication using Java 21.0.5 with PID 19676 (C:\Users\91775\eclipse-workspace\car-management\target\classes started by vt222 in C:\Users\91775\eclipse-workspace\car-management)
+2025-04-12T07:25:10.600+05:30  INFO 19676 --- [car-management-service] [main] c.CarManagementServiceApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-04-12T07:25:10.663+05:30  INFO 19676 --- [car-management-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-04-12T07:25:10.663+05:30  INFO 19676 --- [car-management-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=car-management-service, profiles=[default], label=null, version=8a6c1ab9fb53ad7586c7578b47e16f226541190e, state=
+2025-04-12T07:25:10.807+05:30  WARN 19676 --- [car-management-service] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [carmanagementservice.CarManagementServiceApplication]
+2025-04-12T07:25:10.846+05:30 ERROR 19676 --- [car-management-service] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [carmanagementservice.CarManagementServiceApplication]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:179) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:416) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:289) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:789) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:606) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:464) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1358) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1347) ~[spring-boot-3.2.1.jar:3.2.1]
+	at carmanagementservice.CarManagementServiceApplication.main(CarManagementServiceApplication.java:18) ~[classes/:na]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'jwtUtil' for bean class [carmanagementservice.util.JwtUtil] conflicts with existing, non-compatible bean definition of same name and class [carmanagementservice.security.JwtUtil]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:306) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:246) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:197) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:165) ~[spring-context-6.1.2.jar:6.1.2]
+	... 13 common frames omitted
+
+2025-04-12T07:26:00.554+05:30  INFO 9100 --- [car-management-service] [main] c.CarManagementServiceApplication        : Starting CarManagementServiceApplication using Java 21.0.5 with PID 9100 (C:\Users\91775\eclipse-workspace\car-management\target\classes started by vt222 in C:\Users\91775\eclipse-workspace\car-management)
+2025-04-12T07:26:00.556+05:30  INFO 9100 --- [car-management-service] [main] c.CarManagementServiceApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-04-12T07:26:00.603+05:30  INFO 9100 --- [car-management-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-04-12T07:26:00.604+05:30  INFO 9100 --- [car-management-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=car-management-service, profiles=[default], label=null, version=8a6c1ab9fb53ad7586c7578b47e16f226541190e, state=
+2025-04-12T07:26:00.811+05:30  WARN 9100 --- [car-management-service] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [carmanagementservice.CarManagementServiceApplication]
+2025-04-12T07:26:00.879+05:30 ERROR 9100 --- [car-management-service] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [carmanagementservice.CarManagementServiceApplication]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:179) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:416) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:289) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:789) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:606) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:464) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1358) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1347) ~[spring-boot-3.2.1.jar:3.2.1]
+	at carmanagementservice.CarManagementServiceApplication.main(CarManagementServiceApplication.java:18) ~[classes/:na]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'jwtUtil' for bean class [carmanagementservice.util.JwtUtil] conflicts with existing, non-compatible bean definition of same name and class [carmanagementservice.security.JwtUtil]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:306) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:246) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:197) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:165) ~[spring-context-6.1.2.jar:6.1.2]
+	... 13 common frames omitted
+
+2025-04-12T09:47:18.896+05:30  INFO 19544 --- [car-management-service] [main] c.CarManagementServiceApplication        : Starting CarManagementServiceApplication using Java 21.0.5 with PID 19544 (C:\Users\91775\eclipse-workspace\car-management\target\classes started by vt222 in C:\Users\91775\eclipse-workspace\car-management)
+2025-04-12T09:47:18.899+05:30  INFO 19544 --- [car-management-service] [main] c.CarManagementServiceApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-04-12T09:47:18.961+05:30  INFO 19544 --- [car-management-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-04-12T09:47:18.961+05:30  INFO 19544 --- [car-management-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=car-management-service, profiles=[default], label=null, version=8a6c1ab9fb53ad7586c7578b47e16f226541190e, state=
+2025-04-12T09:47:19.110+05:30  WARN 19544 --- [car-management-service] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [carmanagementservice.CarManagementServiceApplication]
+2025-04-12T09:47:19.149+05:30 ERROR 19544 --- [car-management-service] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [carmanagementservice.CarManagementServiceApplication]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:179) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:416) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:289) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:789) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:606) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:464) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1358) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1347) ~[spring-boot-3.2.1.jar:3.2.1]
+	at carmanagementservice.CarManagementServiceApplication.main(CarManagementServiceApplication.java:18) ~[classes/:na]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'jwtUtil' for bean class [carmanagementservice.util.JwtUtil] conflicts with existing, non-compatible bean definition of same name and class [carmanagementservice.security.JwtUtil]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:306) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:246) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:197) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:165) ~[spring-context-6.1.2.jar:6.1.2]
+	... 13 common frames omitted
+
+2025-04-12T09:47:42.144+05:30  INFO 15844 --- [car-management-service] [main] c.CarManagementServiceApplication        : Starting CarManagementServiceApplication using Java 21.0.5 with PID 15844 (C:\Users\91775\eclipse-workspace\car-management\target\classes started by vt222 in C:\Users\91775\eclipse-workspace\car-management)
+2025-04-12T09:47:42.146+05:30  INFO 15844 --- [car-management-service] [main] c.CarManagementServiceApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-04-12T09:47:42.189+05:30  INFO 15844 --- [car-management-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-04-12T09:47:42.190+05:30  INFO 15844 --- [car-management-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=car-management-service, profiles=[default], label=null, version=8a6c1ab9fb53ad7586c7578b47e16f226541190e, state=
+2025-04-12T09:47:42.298+05:30  WARN 15844 --- [car-management-service] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [carmanagementservice.CarManagementServiceApplication]
+2025-04-12T09:47:42.324+05:30 ERROR 15844 --- [car-management-service] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [carmanagementservice.CarManagementServiceApplication]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:179) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:416) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:289) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:789) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:606) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:464) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1358) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1347) ~[spring-boot-3.2.1.jar:3.2.1]
+	at carmanagementservice.CarManagementServiceApplication.main(CarManagementServiceApplication.java:18) ~[classes/:na]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'jwtUtil' for bean class [carmanagementservice.util.JwtUtil] conflicts with existing, non-compatible bean definition of same name and class [carmanagementservice.security.JwtUtil]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:306) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:246) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:197) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:165) ~[spring-context-6.1.2.jar:6.1.2]
+	... 13 common frames omitted
+
